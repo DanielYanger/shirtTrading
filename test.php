@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "t-shirts";
+$servername = "sql9.freemysqlhosting.net:3306";
+$username = "sql9341272";
+$password = "Z2fRnGBXTl";
+$dbname = "sql9341272";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -13,8 +13,8 @@ if (!$conn)
 }
 
 
-$sql = "INSERT INTO shirts (teamNumber, teamName, Year, Tradablitly) 
-VALUES ($_POST[teamnumber], '$_POST[teamname]', $_POST[year], $_POST[trade])";
+$sql = "INSERT INTO Inventory (teamNumber, teamName, year, type, tradingStatus, notes) 
+VALUES ($_POST[teamNumber], '$_POST[teamName]', $_POST[year], '$_POST[type]', '$_POST[tradingStatus]', '$_POST[notes]')";
 
 if (mysqli_query($conn, $sql)) 
 {

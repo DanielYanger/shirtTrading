@@ -1,18 +1,49 @@
 <html>
   <div>
     <form action="test.php" method="post">
+      <!--Team Number-->
       <label for="team number">Team Number:</label><br />
-      <input type="number" id="team number" name="teamnumber" /><br />
+      <input type="number" id="team number" name="teamNumber" /><br />
       <br />
+
+      <!--Team Name-->
       <label for="team name">Team Name:</label><br />
-      <input type="text" id="team name" name="teamname" /><br />
+      <input type="text" id="team name" name="teamName" /><br />
       <br />
+
+      <!--Year of Item-->
       <label for="year">Year:</label><br />
       <input type="number" id="year" name="year" /><br />
       <br />
-      <label for="trade">Tradability:</label><br />
-      <input type="number" id="trade" name="trade" /><br />
+
+      <!--Type of Item-->
+      <label for="type">Type:</label><br />
+      <select id="type" name="type">
+        <option value="T shirt">T-Shirt</option>
+        <option value="Polo">Polo</option>
+        <option value="Hoodie">Hoodie</option>
+        <option value="Jacket">Jacket</option>
+        <option value="Other">Other</option>
+      </select>
       <br />
+      <br />
+
+      <!--Trading Status-->
+      <label for="tradingStatus">Tradability:</label><br />
+      <select id="tradingStatus" name="tradingStatus">
+        <br />
+        <option value="Avalible">Avalible</option>
+        <option value="Special Trade">Special Trades</option>
+        <option value="Not Tradeable">Not Tradeable</option>
+      </select>
+      <br />
+      <br />
+
+      <!--Notes-->
+      <label for="notes">Notes: </label><br />
+      <input type="text" id="notes" name="notes" /><br />
+      <br />
+
       <input type="submit" value="Submit" />
     </form>
   </div>
