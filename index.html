@@ -1,8 +1,19 @@
 <html>
   <div>
-    <form>
+    <form action="test.php" method="post">
+      <label for="team number">Team Number:</label><br />
+      <input type="number" id="team number" name="teamnumber" /><br />
+      <br />
       <label for="team name">Team Name:</label><br />
-      <input type="text" id="0" name="team name" />
+      <input type="text" id="team name" name="teamname" /><br />
+      <br />
+      <label for="year">Year:</label><br />
+      <input type="number" id="year" name="year" /><br />
+      <br />
+      <label for="trade">Tradability:</label><br />
+      <input type="number" id="trade" name="trade" /><br />
+      <br />
+      <input type="submit" value="Submit" />
     </form>
   </div>
 </html>
